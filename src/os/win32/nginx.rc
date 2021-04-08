@@ -1,6 +1,39 @@
+	/* Resources for nginx.exe */
 
-// Copyright (C) Igor Sysoev
-// Copyright (C) Nginx, Inc.
+	#include <winver.h>
 
+	VS_VERSION_INFO VERSIONINFO
+		FILEVERSION 1,19,7,0
+		PRODUCTVERSION 1,19,7,0
+		FILEFLAGSMASK 0x3fL /* VS_FFI_FILEFLAGSMASK */
+	#ifdef _DEBUG
+		FILEFLAGS 0x1L  /* VS_FF_DEBUG */
+	#else
+		FILEFLAGS 0x0L
+	#endif
+		FILEOS 0x10004L  /* VOS_DOS_WINDOWS32 */
+		FILETYPE 0x2L  /* VFT_DLL */
+		FILESUBTYPE 0x0L  /* VFT2_UNKNOWN */
+	BEGIN
+	    BLOCK "StringFileInfo"
+	    BEGIN
+	        BLOCK "04090000"  /* Lang = US English, Charset = ASCII */
+	        BEGIN
+	            VALUE "Comments", "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 'AS IS' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\0"
+	            VALUE "CompanyName", "Nginx, Inc.\0"
+	            VALUE "FileDescription", "BSD 2-Clause Licensed NGINX for Windows XP/Vista/7/10 and Windows Server 2003.\0"
+	            VALUE "FileVersion", "1.19.7.0\0"
+	            VALUE "InternalName", "nginx.exe\0"
+	            VALUE "LegalCopyright", "Copyright (C) 2002-2017 Igor Sysoev. Copyright (C) 2011-2021 Nginx, Inc. All Rights Reserved.\0"
+	            VALUE "LegalTrademarks", "\0"
+	            VALUE "OriginalFilename", "nginx.exe\0"
+	            VALUE "ProductName", "nginx: HTTP and reverse proxy server.\0"
+	        END
+	    END
+	    BLOCK "VarFileInfo"
+	    BEGIN
+	        VALUE "Translation", 0x0409, 0  /* US English, ASCII */
+	    END
+	END
 
-nginx   icon  discardable  "src\\os\\win32\\nginx.ico"
+	nginx   icon  discardable  "nginx.ico"

@@ -138,75 +138,6 @@
     <ClCompile Include="src\core\ngx_times.c">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\modules\ngx_iocp_module.c">
-      <Filter>Source Files\event\modules</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\modules\ngx_win32_select_module.c">
-      <Filter>Source Files\event\modules</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\ngx_event_pipe.c">
-      <Filter>Source Files\event</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\ngx_event_posted.c">
-      <Filter>Source Files\event</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\ngx_event_timer.c">
-      <Filter>Source Files\event</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\ngx_event.c">
-      <Filter>Source Files\event</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\ngx_event_accept.c">
-      <Filter>Source Files\event</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\event\ngx_event_connect.c">
-      <Filter>Source Files\event</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_copy_filter_module.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_core_module.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_file_cache.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_header_filter_module.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_parse.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_postpone_filter_module.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_request.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_request_body.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_script.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_special_response.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_upstream.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_upstream_round_robin.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_variables.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http_write_filter_module.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
-    <ClCompile Include="..\nginx_original\src\http\ngx_http.c">
-      <Filter>Source Files\http</Filter>
-    </ClCompile>
     <ClCompile Include="src\http\modules\ngx_http_access_module.c">
       <Filter>Source Files\http\modules</Filter>
     </ClCompile>
@@ -312,9 +243,6 @@
     <ClCompile Include="src\http\modules\ngx_http_auth_basic_module.c">
       <Filter>Source Files\http\modules</Filter>
     </ClCompile>
-    <ClCompile Include="src\event\ngx_event_acceptex.c">
-      <Filter>Source Files\event</Filter>
-    </ClCompile>
     <ClCompile Include="src\os\win32\ngx_alloc.c">
       <Filter>Source Files\os\win32</Filter>
     </ClCompile>
@@ -381,5 +309,91 @@
     <ClCompile Include="config\ngx_pch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\event\modules\ngx_iocp_module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\modules\ngx_win32_select_module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_accept.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_connect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_pipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_posted.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_copy_filter_module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_core_module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_file_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_header_filter_module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_postpone_filter_module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_request.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_request_body.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_script.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_special_response.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_upstream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_upstream_round_robin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_variables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\ngx_http_write_filter_module.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_module.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\ngx_sha1.c">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event\ngx_event_acceptex.c">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\os\win32\ngx_dlopen.c">
+      <Filter>Source Files\os\win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\event\modules\ngx_iocp_module.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

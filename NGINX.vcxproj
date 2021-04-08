@@ -19,10 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\core\ngx_module.c" />
+    <ClCompile Include="src\core\ngx_sha1.c" />
     <ClCompile Include="src\event\modules\ngx_iocp_module.c" />
     <ClCompile Include="src\event\modules\ngx_win32_select_module.c" />
     <ClCompile Include="src\event\ngx_event.c" />
     <ClCompile Include="src\event\ngx_event_accept.c" />
+    <ClCompile Include="src\event\ngx_event_acceptex.c" />
     <ClCompile Include="src\event\ngx_event_connect.c" />
     <ClCompile Include="src\event\ngx_event_pipe.c" />
     <ClCompile Include="src\event\ngx_event_posted.c" />
@@ -78,7 +81,6 @@
     <ClCompile Include="src\core\ngx_string.c" />
     <ClCompile Include="src\core\ngx_syslog.c" />
     <ClCompile Include="src\core\ngx_times.c" />
-    <ClCompile Include="src\event\ngx_event_acceptex.c" />
     <ClCompile Include="src\http\modules\ngx_http_access_module.c" />
     <ClCompile Include="src\http\modules\ngx_http_auth_basic_module.c" />
     <ClCompile Include="src\http\modules\ngx_http_autoindex_module.c" />
@@ -117,6 +119,7 @@
     <ClCompile Include="src\http\modules\ngx_http_userid_filter_module.c" />
     <ClCompile Include="src\http\modules\ngx_http_uwsgi_module.c" />
     <ClCompile Include="src\os\win32\ngx_alloc.c" />
+    <ClCompile Include="src\os\win32\ngx_dlopen.c" />
     <ClCompile Include="src\os\win32\ngx_errno.c" />
     <ClCompile Include="src\os\win32\ngx_event_log.c" />
     <ClCompile Include="src\os\win32\ngx_files.c" />
@@ -134,6 +137,9 @@
     <ClCompile Include="src\os\win32\ngx_wsarecv_chain.c" />
     <ClCompile Include="src\os\win32\ngx_wsasend.c" />
     <ClCompile Include="src\os\win32\ngx_wsasend_chain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\event\modules\ngx_iocp_module.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D18B976A-0569-4BEC-8A4A-FFBFF436E92D}</ProjectGuid>
